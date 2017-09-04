@@ -7,7 +7,15 @@
 	</head>
 	<body>
 		@include('inc.navbar')
-		@yield('content')
+		<div class="container">
+			<div class="row">
+				@include('inc.message')
+			</div>
+			@yield('content')
+		</div>
+		<footer id="footer" class="text-center">
+			<p>Copyright 2017 &copy; Mario Carrizales</p>
+		</footer>
 	</body>
 </html>
 

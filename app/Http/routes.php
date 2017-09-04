@@ -11,14 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','PagesController@getHome');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::post('/','PagesController@login');
 
-Route::get('/messages', function () {
-    return view('messages');
-});
+Route::get('/contact','PagesController@getContact')->middleware('auth');
+
+Route::get('/messages', 'MessagesController@getMessages')->middleware('auth');
+
+Route::post('/contact', 'MessagesController@submit');
