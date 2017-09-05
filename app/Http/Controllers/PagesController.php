@@ -22,6 +22,8 @@ class PagesController extends Controller{
 			
 			// Authentication passed...
 			return redirect()->intended( '/contact' );
+		}else{
+			return redirect()->intended( '/' );
 		}
 	}
 
