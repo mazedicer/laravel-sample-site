@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'pcdoctormario'),
+    'username' => env('MAIL_USERNAME', 'yourusername'),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD', 'Oiram9Send0@'),
+    'password' => env('MAIL_PASSWORD', 'yourpassword'),
 
     /*
     |--------------------------------------------------------------------------
